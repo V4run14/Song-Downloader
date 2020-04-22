@@ -1,3 +1,5 @@
+# chrome driver exe should be in the same directory
+
 from selenium import webdriver
 import time
 
