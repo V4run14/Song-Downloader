@@ -1,6 +1,7 @@
 # chrome driver exe should be in the same directory
 
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 import time
 
 class ytbot:
@@ -18,9 +19,12 @@ class ytbot:
         self.driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/form/input[1]").send_keys(url+'\n')
         time.sleep(1)
         self.driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/a[1]").click()
-
-name=input("Enter song name you want to download: ")
-ytbot()
+n=int(input("No. of songs: "))
+i=1
+while i<=n:
+    name=input("Enter song name you want to download: ")
+    ytbot()
+    i+=1
 
 x=input()
 
