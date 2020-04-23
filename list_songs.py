@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
-def fx():
+def process():
     
     driver.get("https://youtube.com") 
     time.sleep(1)
@@ -23,17 +23,17 @@ def fx():
 
 n=int(input("No. of songs: "))
 i=0
-l=[]
+list_songs=[]
 print("Enter songs you want to download: ")
 while i<n:
-    l.append(input())
+    list_songs.append(input())
     i+=1
 i=0
 while i<n:
-    name=l[i]
+    name=list_songs[i]
     if(i==0):
         driver=webdriver.Chrome()
-    fx()
+    process()
     i+=1
 driver.get("https://google.com") 
 terminate=input()
