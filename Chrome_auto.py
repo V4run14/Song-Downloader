@@ -19,6 +19,8 @@ class ytbot:
         self.driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/form/input[1]").send_keys(url+'\n')
         time.sleep(1)
         self.driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/a[1]").click()
+        time.sleep(1)
+        self.driver.get("https://youtube.com")
 n=int(input("No. of songs: "))
 i=1
 while i<=n:
